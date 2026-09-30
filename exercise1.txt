@@ -1,0 +1,7 @@
+Exercise 1: Text Statistics
+
+Source file: dante.txt
+
+1. Total number of lines: 19567
+2. Total number of words: 97676
+3. Total number of non-blank lines: 14338
