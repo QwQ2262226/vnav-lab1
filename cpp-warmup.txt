@@ -1,0 +1,75 @@
+C++ Warm-up Exercises
+
+1. Operators
+
+1.1 Code:
+int i = 0, j;
+j = ++i;
+j = i++;
+
+Final values:
+i = 2
+j = 1
+
+Explanation:
+++i increments i before assignment, so i becomes 1 and j becomes 1.
+i++ assigns the current value of i to j first, then increments i to 2.
+
+1.2 Code:
+int i = 42;
+std::string output = (i < 42) ? "a" : "b";
+std::cout << output << std::endl;
+
+Output:
+b
+
+Explanation:
+The condition 42 < 42 is false, so the conditional operator selects "b".
+
+2. References and Pointers
+
+2.1 Output:
+10 10
+
+Explanation:
+ri is a reference to i. Assigning 10 to ri changes i to 10.
+
+2.2 Output:
+1764
+
+Explanation:
+j points to i. The expression *j * *j calculates 42 times 42 and stores 1764 in i.
+
+2.3 Output:
+0
+
+Explanation:
+*(i + 2) is i[2]. It is assigned i[1] - i[3], which equals 24 - 24 = 0.
+
+2.4 Output:
+0
+
+Explanation:
+reset receives j by reference and assigns 0 directly to j.
+
+3. Numbers
+
+3.1 Integer types:
+short, int, long, and long long are signed integer types with different minimum storage sizes and ranges.
+On this 64-bit Ubuntu system, short is typically 16 bits, int is typically 32 bits, and long and long long are typically 64 bits.
+
+3.2 float and double:
+float usually uses 32 bits and has lower precision.
+double usually uses 64 bits and has higher precision.
+After assigning 3.14 to an int, i has the value 3 because the fractional part is discarded.
+
+3.3 Signed and unsigned types:
+Signed types represent negative and positive values.
+Unsigned types represent only non-negative values and use modular arithmetic.
+Assuming 8-bit char, unsigned char c = -1 gives c the value 255.
+
+3.4 Conditional statement:
+The final value of i is 0.
+
+Explanation:
+The initial value 42 is non-zero, so the if condition is true and i is assigned 0.
